@@ -155,6 +155,7 @@
     color: #FFFFFF;
     text-align: center;
     vertical-align: middle;
+    text-transform: uppercase;
   }
   
   .sub_title {
@@ -166,6 +167,12 @@
     margin-top: 32px;
     text-transform: uppercase;
   }
+  .sub_descr {
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    color: #222222;
+}
   
   /* repeater code end */
   
@@ -209,3 +216,88 @@
       }
     }
   }
+  .mobile {
+    min-height: 864px;
+    background: url('../img/bg/mobile_bg.jpg') center center/cover no-repeat;
+    padding-top: 10px;
+    .row {
+        margin-top: 32px;
+    }
+    .title {
+        margin-top: 30px;
+    }
+    &_item {
+        position: relative;
+        width: 320px;
+        height: 280px;
+        margin: 0 auto;
+        margin-bottom: 19px;
+        padding-top: 80px;
+        &_1 {
+            background: url('../img/card.png') center center/cover no-repeat;
+        }
+        &_2 {
+            background: url('../img/card2.png') center center/cover no-repeat;
+        }
+        &_3 {
+            background: url('../img/card3.png') center center/cover no-repeat;
+        }
+        &_4 {
+            background: url('../img/card4.png') center center/cover no-repeat;
+        }
+        &_5 {
+            background: url('../img/card5.png') center center/cover no-repeat;
+        }
+        &_6 {
+            background: url('../img/card6.png') center center/cover no-repeat;
+        }
+        &_subtitle {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &_plus {
+            position: absolute;
+            bottom: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 26px;
+            height: 26px;
+            background-color: #000000;
+            margin: 0 auto;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+    }
+  }
+  .car {
+    min-height: 968px;
+    background: url('../img/bg/Group1.jpg') center center/cover no-repeat;
+    padding: 57px 0;
+    .title {
+        margin: 0 auto;
+        color: #000000;
+        background-color: #ffffff;
+    }
+    .sub_title {
+        color: #ffffff;
+    }
+    .sub_descr {
+        color: #ffffff;
+    }
+    &_img {
+        display: block;
+        margin: 54px auto 0 auto;
+    }
+    &_text {
+        text-align: center;
+        font-size: 17px;
+        color: #222222;
+        font-weight: 300;
+    }
+}
