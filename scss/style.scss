@@ -301,3 +301,26 @@
         font-weight: 300;
     }
 }
+
+.world {
+    min-height: 720px;
+    background: url('../img/bg/Group2.jpg') center center/cover no-repeat;
+    padding: 46px 0 22px 0;
+    .title {
+        margin: 0 auto;
+        color: #000000;
+        background-color: #ffffff;
+    }
+    .sub_title {
+        color: #ffffff;
+    }
+    .sub_descr {
+        color: #ffffff;
+    }
+    &_look {
+        margin-top: 450px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
