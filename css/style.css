@@ -6,8 +6,12 @@ header {
 }
 
 nav {
+    position: fixed;
+    width: 100%;
     height: 50px;
     background-color: #212121;
+    z-index: 10;
+    
 }
 .menu {
     padding: 13px 70px;
@@ -34,6 +38,8 @@ nav {
     width: 100%;
     height: 84px;
     background-color: rgba(0, 0, 0, .6);
+    transform: translateY(50px);
+    z-index: 5;
 }
 
 .subheader .subheader_logo {
@@ -83,7 +89,7 @@ nav {
     text-transform: uppercase;
 }
 .promo {
-
+    transform: translateY(50px);
     min-height: 800px;
     background: url('../img/bg/uber_bg.jpg') center center/cover no-repeat;
     padding: 135px 0 135px 0;
@@ -132,4 +138,66 @@ nav {
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+/* repeater code begin*/
+.title {
+    margin: 70px auto 0 auto;
+    width: 115px;
+    height: 27px;
+    background: #000000;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
+    color: #FFFFFF; 
+    text-align: center;
+    vertical-align: middle;
+}
+
+.sub_title {
+    font-weight: 700;
+    font-size: 38px;
+    color: #222222;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 32px;
+    text-transform: uppercase;
+}
+/* repeater code end */
+
+.reasons .reasons_block {
+    display: flex;
+    align-items: center;   
+    margin-top: 16px;
+    margin-bottom: 26px;
+}
+
+.reasons .reasons_img {
+    margin-right: 25px;
+    width: 116px;
+    height: 116px;
+    background: #1EACC7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reasons .reasons_img img {
+    /* display: block;
+    margin: 30px auto; */
+    max-width: 100%;
+}
+
+.reasons .reasons_descr {
+    width: 370px;
+    min-height: 150px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    color: #202020;
+}
+.reasons .reasons_descr span {
+    font-weight: 400;
+    font-size: 17px;
+    color: #1EACC7;
 }
