@@ -29,14 +29,18 @@ $main_color: #1eacc7;
     display: flex;
     justify-content: space-between;
   
-    .menu_link {
+    &_link {
       color: #ffffff;
       font-size: 15px;
       font-weight: 300;
       text-decoration: none;
+      &:hover {
+        color: #ffffff;
+        text-decoration: underline;
+      }
     }
   
-    .menu_item {
+    &_item {
       border-right: 2px dotted #000;
       padding-right: 28px;
     }
@@ -81,6 +85,10 @@ $main_color: #1eacc7;
       text-align: right;
       line-height: 12px;
       text-decoration: none;
+      transition: .5s all;
+      &:hover {
+        color: rgb(248, 46, 46);
+      }
     }
   
     &_btn {
@@ -340,26 +348,34 @@ $main_color: #1eacc7;
 }
 
 .world {
-    min-height: 720px;
-    background: url('../img/bg/Group2.jpg') center center/cover no-repeat;
-    padding: 46px 0 22px 0;
-    .title {
-        margin: 0 auto;
-        color: #000000;
-        background-color: #ffffff;
-    }
-    .sub_title {
-        color: #ffffff;
-    }
-    .sub_descr {
-        color: #ffffff;
-    }
-    &_look {
-        margin-top: 450px;
-        text-align: center;
+  min-height: 720px;
+  background: url('../img/bg/Group2.jpg') center center/cover no-repeat;
+  padding: 46px 0 22px 0;
+  .title {
+      margin: 0 auto;
+      color: #000000;
+      background-color: #ffffff;
+  }
+  .sub_title {
+      color: #ffffff;
+  }
+  .sub_descr {
+      color: #ffffff;
+  }
+  &_look {
+      margin-top: 450px;
+      text-align: center;
+      a {
         text-decoration: none;
         text-transform: uppercase;
-    }
+        color: white; 
+        transition: .5s all;
+        &:hover {
+          text-decoration: underline;
+          color: rgb(248, 60, 60); 
+        }
+      }
+  }
 }
 
 .require {
@@ -484,3 +500,4 @@ $main_color: #1eacc7;
 		}
   }
 }
+
