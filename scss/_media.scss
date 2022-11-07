@@ -1,0 +1,289 @@
+@media (max-width: 1200px) {
+    .menu {
+        &_item {
+            padding-right: 19px;
+        }
+        &_link {
+            font-size: 13px;
+        }
+    }
+    .promo {
+        &_header {
+            font-size: 50px;
+        }
+    }
+    .reasons {
+        &_block {
+            align-items: flex-start;
+        }
+        &_descr {
+            width: 300px;
+        }
+    }
+    .mobile {
+        &_item {
+            width: 300px;
+        }
+    }
+    .car {
+        min-height: 890px;
+    }
+    .footer {
+        padding: 10px 2px;
+        &_links {
+            width: 30%;
+        }
+        &_info {
+            width: 30%;
+            hr {
+                width: 240px;
+            }
+        }
+        &_descr {
+            font-size: 13px;
+        }
+        &_text {
+            font-size: 10px;
+        }
+        &_app {
+            width: 30%;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .menu {
+        &_item {
+            padding-right: 9px;
+        }
+        &_link {
+            font-size: 10px;
+        }
+    }
+    .subheader {
+        &_logo {
+            img {
+                width: 100%;
+            }
+        }
+        &_official {
+            font-size: 11px;
+        }
+        &_phone {
+            font-size: 18px;
+        }
+        &_btn {
+            width: 100%;
+            margin-top: 20px;
+            height: 40px;
+        }
+    }
+    .promo {
+        &_header {
+            font-size: 40px;
+        }
+        &_subheader {
+            font-size: 30px;
+        }
+    }
+    .reasons {
+        &_block {
+            flex-direction: column;
+            align-items: center;
+        }
+        &_descr {
+            width: 300px;
+            margin-top: 20px;
+        }
+    }
+    .mobile {
+        &_item {
+            width: 200px;
+            &_subtitle {
+                font-size: 15px;
+            }
+        }
+    }
+    .car {
+        min-height: 830px;
+        &_img {
+            width: 100%;
+        }
+    }
+    .footer { 
+        flex-direction: column;
+        align-items: center;
+        &_links {
+            order: 1;
+            @include footer_media
+        }
+        &_info {
+            order: 0;
+            @include footer_media
+        }
+        &_app {
+            order: 2;
+            div {
+                margin: 0 auto;
+            }
+            @include footer_media
+        }
+    }
+    .reasons {
+        &_img {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(0,0,0, .8);
+        transition: .7s all;
+        &_active {
+            left: 0;
+        }
+        &_item {
+            padding-right: 0;
+            border: 0;
+        }
+        &_link {
+            font-size: 20px;
+        }
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 21px;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #fff;
+            margin-bottom: 5px;
+            transition: .4s all;
+        }
+        &_active {
+            span {
+                margin-bottom: -5px;
+                &:nth-child(1) {
+                    transform: translateY(8px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(11px) rotate(45deg);
+                }
+            }
+        }
+    }
+    .xs-hidden {
+        display: none;
+    }
+    .xs-visible {
+        display: block;
+    }
+    .subheader {
+        &_phone {
+            display: block;
+            margin-top: 10px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &_btn {
+            width: 200px;
+            height: 40px;
+            margin: 0 auto;
+            display: block;
+            margin-top: 10px;
+        }
+    }
+    .promo {
+        &_header {
+            line-height: 45px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .menu {
+        &_link {
+            font-size: 11px;
+        }
+    }
+    .subheader {
+        height: 60px;
+        &_official {
+            display: none;
+        }
+        &_logo {
+            margin-top: 16px;
+        }
+        &_phone {
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+        &_btn {
+            width: 110px;
+            height: 22px;
+            font-size: 9px;
+            margin-top: 9px;
+        }
+    }
+    .sub_title {
+        font-size: 26px;
+    }
+    .sub_descr {
+        font-size: 14px;
+    }
+    .car {
+        min-height: 750px;
+    }
+    .footer {
+        &_links {
+            margin-bottom: 26px;
+            width: 300px;
+        }
+        &_info {
+            margin-bottom: 26px;
+            width: 300px;
+            .hr {
+                width: 220px;
+            }
+        }
+        &_app {
+            margin-bottom: 0;
+            width: 300px;
+        }
+    }
+    .promo {
+        min-height: 400px;
+        &_descr {
+            display: none;
+        }
+    }
+
+    .mobile {
+        &_item {
+            width: 250px;
+        }
+    }
+}
